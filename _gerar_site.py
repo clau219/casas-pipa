@@ -44,10 +44,10 @@ CASAS = [
   {
     "slug": "casa-terracota", "nome": "Casa Terracota", "numero": "50", "cor": "terracota",
     "titulo_seo": "Casa Terracota – casa com piscina para 7 pessoas na Praia da Pipa",
-    "descricao_seo": "Casa de temporada com piscina, 3 quartos e ar-condicionado no Condomínio Pipa Natureza, Praia da Pipa (RN). Até 7 hóspedes. Reserve direto pelo WhatsApp.",
+    "descricao_seo": "Casa de temporada com piscina, 3 suítes com ar-condicionado e varanda gourmet no Condomínio Pipa Natureza, Praia da Pipa (RN). Até 7 hóspedes. Reserve direto pelo WhatsApp.",
     "resumo": "Arquitetura moderna com cobogós terracota, piscina privativa e varanda gourmet integrada à sala e à cozinha.",
     "ideal": "Famílias e grupos de amigos que gostam de cozinhar e reunir todo mundo à mesa.",
-    "hospedes": 7, "quartos": 3, "suites": 1, "banheiros": "3,5",
+    "hospedes": 7, "quartos": 3, "suites": 3, "banheiros": "3,5",
     "camas": "1 cama de casal e 5 de solteiro",
     "quartos_detalhe": [],        # >>> PREENCHER: camas de cada quarto, ex.: [("Suíte", "1 cama de casal · ar-condicionado"), ...]
     "piscina": True,
@@ -59,7 +59,7 @@ CASAS = [
     "bom_saber": ["A piscina é limpa às segundas, quartas e sextas."],
     "texto": [
       "A Casa Terracota é uma casa de temporada em Pipa pensada para famílias e grupos de amigos que querem espaço, privacidade e conforto a poucos minutos das praias mais bonitas do litoral potiguar.",
-      "A sala, a cozinha e a varanda gourmet formam um único ambiente aberto para a piscina, com pé-direito alto e muita luz natural. São 3 quartos com ar-condicionado — sendo 1 suíte — e 3,5 banheiros, acomodando até 7 pessoas.",
+      "A sala, a cozinha e a varanda gourmet formam um único ambiente aberto para a piscina, com pé-direito alto e muita luz natural. São 3 suítes com ar-condicionado, cada uma com seu banheiro, e 3,5 banheiros no total, acomodando até 7 pessoas.",
       "Fica no Condomínio Pipa Natureza, em meio à mata atlântica, com trilha de cerca de 20 minutos até a Praia do Madeiro, famosa pelos golfinhos e pelo mar calmo.",
     ],
     "fotos": [("terracota-varanda-gourmet", "Varanda gourmet com mesa de jantar ao lado da piscina da Casa Terracota"),
@@ -82,14 +82,14 @@ CASAS = [
   {
     "slug": "casa-frida", "nome": "Casa Frida", "numero": "39", "cor": "frida",
     "titulo_seo": "Casa Frida – casa de temporada com piscina e churrasqueira em Pipa",
-    "descricao_seo": "Casa Frida: 3 quartos com suíte king, piscina, churrasqueira e adega no Condomínio Pipa Natureza, Praia da Pipa (RN). Até 8 hóspedes. Reserve pelo WhatsApp.",
+    "descricao_seo": "Casa Frida: 3 suítes (uma com cama king), piscina, churrasqueira e adega no Condomínio Pipa Natureza, Praia da Pipa (RN). Até 8 hóspedes. Reserve pelo WhatsApp.",
     "resumo": "Casa moderna e colorida, com piscina, deck com espreguiçadeiras, churrasqueira e suíte com cama king.",
     "ideal": "Grupos de até 8 pessoas que querem área externa ampla, churrasco e piscina.",
-    "hospedes": 8, "quartos": 3, "suites": 1, "banheiros": "3,5",
+    "hospedes": 8, "quartos": 3, "suites": 3, "banheiros": "3,5",
     "camas": "1 cama king, 1 queen e 4 de solteiro",
-    "quartos_detalhe": [("Suíte", "1 cama king · ar-condicionado · ventilador de teto · TV"),
-                        ("Quarto 1", "1 cama queen e 1 de solteiro · ar-condicionado · ventilador de teto · TV com Chromecast"),
-                        ("Quarto 2", "3 camas de solteiro · ar-condicionado")],
+    "quartos_detalhe": [("Suíte 1", "1 cama king · banheiro privativo · ar-condicionado · ventilador de teto · TV"),
+                        ("Suíte 2", "1 cama queen e 1 de solteiro · banheiro privativo · ar-condicionado · ventilador de teto · TV com Chromecast"),
+                        ("Suíte 3", "3 camas de solteiro · banheiro privativo · ar-condicionado")],
     "piscina": True,
     "nota": "4,73", "airbnb": "https://www.airbnb.com.br/rooms/45895549",
     "hero": "frida-piscina", "card": "frida-fachada",
@@ -100,7 +100,7 @@ CASAS = [
     "bom_saber": [],
     "texto": [
       "A Casa Frida é uma hospedagem em Pipa com personalidade: cores, arte e uma área externa feita para aproveitar o clima do Rio Grande do Norte o ano inteiro.",
-      "São 3 quartos — uma suíte com cama king, um quarto com cama queen e um quarto com camas de solteiro — e 3,5 banheiros, para até 8 hóspedes. A varanda tem churrasqueira de inox e mesa redonda para 6, de frente para a piscina.",
+      "São 3 suítes — uma com cama king, uma com cama queen e uma com camas de solteiro — e 3,5 banheiros, para até 8 hóspedes. A varanda tem churrasqueira de inox e mesa redonda para 6, de frente para a piscina.",
       "A cozinha é completa (cooktop, forno elétrico, micro-ondas, air fryer, cafeteira, adega) e a sala tem TV de 50 polegadas. Tudo isso no Condomínio Pipa Natureza, a poucos minutos do centro de Pipa e com trilha até a Praia do Madeiro.",
     ],
     "fotos": [("frida-piscina", "Piscina da Casa Frida no Condomínio Pipa Natureza, Pipa RN"),
@@ -122,7 +122,7 @@ CASAS = [
     "slug": "casa-azul", "nome": "Casa Azul", "numero": "40", "cor": "azul",
     "titulo_seo": "Casa Azul – casa com 3 suítes e piscina para alugar em Pipa",
     "descricao_seo": "Casa Azul: 3 suítes e piscina no Condomínio Pipa Natureza, Praia da Pipa (RN). Ideal para casais e famílias, até 6 hóspedes. Reserve direto pelo WhatsApp.",
-    "resumo": "Três suítes independentes e piscina — perfeita para casais viajando juntos ou famílias que querem privacidade.",
+    "resumo": "Piscina privativa, varanda com mesa ao ar livre e três suítes — perfeita para casais viajando juntos ou famílias.",
     "ideal": "Casais viajando juntos ou famílias que querem um banheiro para cada quarto.",
     "hospedes": 6, "quartos": 3, "suites": 3, "banheiros": "3,5",
     "camas": "2 camas de casal e 2 de solteiro",
@@ -399,7 +399,7 @@ def foot(cta_casa=None):
 # ====== PÁGINA INICIAL ======
 def pagina_inicial():
     title = "Casas com piscina para alugar em Pipa (RN) – Condomínio Pipa Natureza"
-    desc = (f"Três casas de temporada com piscina no Condomínio Pipa Natureza, Praia da Pipa (RN): Terracota, Frida e Azul. "
+    desc = (f"Três casas de temporada com piscina no Condomínio Pipa Natureza, Praia da Pipa (RN): Terracota, Frida e Azul, todas com 3 suítes. "
             f"De 6 a 8 hóspedes por casa, até {CAP_TOTAL} juntas. Reserve direto com o anfitrião pelo WhatsApp.")
     faq = faq_lista()
     ld = {"@context": "https://schema.org", "@graph": [
