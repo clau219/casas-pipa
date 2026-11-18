@@ -33,7 +33,7 @@ HOJE = datetime.date.today().isoformat()
 PENDENTE = {
     "formas_pagamento": "Pagamento por Pix, transferência ou cartão de crédito. Para confirmar a reserva, paga-se um sinal de 50%; o restante, até 7 dias antes da entrada.",
     "politica_cancelamento": "Cancelamento até 30 dias antes da entrada: reembolso integral. Entre 30 e 7 dias antes: reembolso de 50% do valor pago. A menos de 7 dias da entrada: sem reembolso.",
-    "animais": "Animais de estimação são bem-vindos, com taxa (a mesma praticada no Airbnb) informada na consulta. Avise ao reservar.",   # >>> valor da taxa: informar quando souber
+    "animais": "Animais de estimação são bem-vindos (até 2 por reserva), com taxa única de R$ 150 por estadia. Animais de serviço não pagam. Avise ao reservar.",
     "taxa_limpeza": "Sem taxa de limpeza na reserva direta.",
     "criancas_berco": "Crianças são bem-vindas. As casas não têm berço.",
     "eventos_festas": "Não são permitidos eventos ou festas.",
