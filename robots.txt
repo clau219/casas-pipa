@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clau219.github.io/casas-pipa/sitemap.xml
