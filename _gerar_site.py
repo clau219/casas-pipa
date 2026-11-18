@@ -31,12 +31,12 @@ HOJE = datetime.date.today().isoformat()
 # ====== PENDENTE — preencha quando tiver a informação ======
 # Enquanto estiver vazio, o item NÃO aparece no site (nada é inventado).
 PENDENTE = {
-    "formas_pagamento": "",       # >>> PREENCHER. ex.: "Pix ou transferência. Sinal de 50% para confirmar e o restante na entrada."
-    "politica_cancelamento": "",  # >>> PREENCHER. ex.: "Cancelamento com reembolso integral até 30 dias antes da entrada."
-    "animais": "",                # >>> PREENCHER. ex.: "Não aceitamos animais." ou "Aceitamos 1 animal de pequeno porte."
-    "taxa_limpeza": "",           # >>> PREENCHER. ex.: "Taxa única de limpeza de R$ 180."
-    "criancas_berco": "",         # >>> PREENCHER. ex.: "Crianças são bem-vindas. Berço sob consulta."
-    "eventos_festas": "",         # >>> PREENCHER. ex.: "Não são permitidos eventos ou festas."
+    "formas_pagamento": "Pagamento por Pix, transferência ou cartão de crédito. Para confirmar a reserva, paga-se um sinal de 50%; o restante, até 7 dias antes da entrada.",
+    "politica_cancelamento": "Cancelamento até 30 dias antes da entrada: reembolso integral. Entre 30 e 7 dias antes: reembolso de 50% do valor pago. A menos de 7 dias da entrada: sem reembolso.",
+    "animais": "Animais de estimação são bem-vindos, com taxa (a mesma praticada no Airbnb) informada na consulta. Avise ao reservar.",   # >>> valor da taxa: informar quando souber
+    "taxa_limpeza": "Sem taxa de limpeza na reserva direta.",
+    "criancas_berco": "Crianças são bem-vindas. As casas não têm berço.",
+    "eventos_festas": "Não são permitidos eventos ou festas.",
 }
 
 # ====== AS CASAS ======
@@ -47,7 +47,7 @@ CASAS = [
     "descricao_seo": "Casa de temporada com piscina, 3 quartos e ar-condicionado no Condomínio Pipa Natureza, Praia da Pipa (RN). Até 7 hóspedes. Reserve direto pelo WhatsApp.",
     "resumo": "Arquitetura moderna com cobogós terracota, piscina privativa e varanda gourmet integrada à sala e à cozinha.",
     "ideal": "Famílias e grupos de amigos que gostam de cozinhar e reunir todo mundo à mesa.",
-    "hospedes": 7, "quartos": 3, "suites": 1, "banheiros": "2,5",   # >>> CONFERIR: o Airbnb mostra "1 banheiro"
+    "hospedes": 7, "quartos": 3, "suites": 1, "banheiros": "3,5",
     "camas": "1 cama de casal e 5 de solteiro",
     "quartos_detalhe": [],        # >>> PREENCHER: camas de cada quarto, ex.: [("Suíte", "1 cama de casal · ar-condicionado"), ...]
     "piscina": True,
@@ -59,21 +59,25 @@ CASAS = [
     "bom_saber": ["A piscina é limpa às segundas, quartas e sextas."],
     "texto": [
       "A Casa Terracota é uma casa de temporada em Pipa pensada para famílias e grupos de amigos que querem espaço, privacidade e conforto a poucos minutos das praias mais bonitas do litoral potiguar.",
-      "A sala, a cozinha e a varanda gourmet formam um único ambiente aberto para a piscina, com pé-direito alto e muita luz natural. São 3 quartos com ar-condicionado — sendo 1 suíte — e 2,5 banheiros, acomodando até 7 pessoas.",
+      "A sala, a cozinha e a varanda gourmet formam um único ambiente aberto para a piscina, com pé-direito alto e muita luz natural. São 3 quartos com ar-condicionado — sendo 1 suíte — e 3,5 banheiros, acomodando até 7 pessoas.",
       "Fica no Condomínio Pipa Natureza, em meio à mata atlântica, com trilha de cerca de 20 minutos até a Praia do Madeiro, famosa pelos golfinhos e pelo mar calmo.",
     ],
-    "fotos": [("terracota-piscina", "Piscina e varanda gourmet da Casa Terracota em Pipa"),
+    "fotos": [("terracota-varanda-gourmet", "Varanda gourmet com mesa de jantar ao lado da piscina da Casa Terracota"),
+              ("terracota-piscina", "Piscina e varanda gourmet da Casa Terracota em Pipa"),
               ("terracota-fachada", "Fachada com cobogós terracota no Condomínio Pipa Natureza"),
-              ("terracota-varanda-gourmet", "Varanda gourmet com mesa de jantar ao lado da piscina"),
-              ("terracota-sala-cozinha", "Sala integrada à cozinha"),
-              ("terracota-cozinha", "Cozinha completa com bancada"),
+              ("terracota-piscina-cobogo", "Piscina, gramado e cobogó terracota"),
+              ("terracota-sala-cozinha", "Sala integrada à cozinha, aberta para o jardim"),
+              ("terracota-cozinha", "Cozinha completa com bancada vermelha"),
+              ("terracota-sala-integrada", "Ambiente integrado de sala, cozinha e varanda"),
               ("terracota-sala", "Sala de estar com sofás e TV"),
               ("terracota-quarto-casal", "Quarto de casal com ar-condicionado"),
-              ("terracota-quarto-solteiro", "Quarto com camas de solteiro"),
-              ("terracota-banheiro", "Banheiro da suíte"),
-              ("terracota-jardim", "Jardim e área externa ao pôr do sol"),
-              ("terracota-sala-integrada", "Ambiente integrado com vista para o jardim"),
-              ("terracota-entrada", "Entrada da casa")],
+              ("terracota-quarto-solteiro", "Quarto com camas de solteiro e ar-condicionado"),
+              ("terracota-quarto-solteiro-2", "Outro quarto com camas de solteiro"),
+              ("terracota-banheiro", "Banheiro com parede terracota"),
+              ("terracota-entrada", "Entrada da casa"),
+              ("terracota-cobogo", "Corredor de entrada com cobogós terracota"),
+              ("terracota-jardim", "Cobogó terracota e jardim ao pôr do sol"),
+              ("terracota-caminho", "Caminho do jardim até o portão")],
   },
   {
     "slug": "casa-frida", "nome": "Casa Frida", "numero": "39", "cor": "frida",
@@ -122,7 +126,9 @@ CASAS = [
     "ideal": "Casais viajando juntos ou famílias que querem um banheiro para cada quarto.",
     "hospedes": 6, "quartos": 3, "suites": 3, "banheiros": "3,5",
     "camas": "2 camas de casal e 2 de solteiro",
-    "quartos_detalhe": [],        # >>> PREENCHER: camas de cada suíte
+    "quartos_detalhe": [("Suíte 1", "1 cama de casal · banheiro privativo · ar-condicionado"),
+                        ("Suíte 2", "1 cama de casal · banheiro privativo · ar-condicionado"),
+                        ("Suíte 3", "2 camas de solteiro · banheiro privativo · ar-condicionado")],
     "piscina": True,
     "nota": "4,82", "airbnb": "https://www.airbnb.com.br/rooms/1315796557769332463",
     "hero": "azul-piscina", "card": "azul-fachada",
