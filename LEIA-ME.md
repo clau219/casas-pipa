@@ -12,6 +12,11 @@ Depois de editar, rode `python _gerar_site.py` nesta pasta para recriar as pági
 
 O GitHub Pages atualiza o site em 1–2 minutos.
 
+- **Páginas**: início (`index.html`), uma por casa, `estadia.html` (check-in, regras, como chegar, dicas, FAQ) e `404.html`.
+  Visual em `style.css`; formulário de consulta, galeria e menu em `site.js`.
+- **Dados que faltam**: bloco `PENDENTE` e `quartos_detalhe` em `_gerar_site.py`. Enquanto vazios, não aparecem no site;
+  o gerador lista o que falta ao rodar.
+- **Imagens**: cada foto tem uma versão leve em `img/sm/` (640px, para celular). Ao adicionar foto nova, gere a versão leve também.
 - **E-mail no site**: fica de fora por padrão. Para mostrar, defina a variável `SITE_EMAIL` antes de rodar o gerador.
 - **Fotos**: ficam em `img/` (.webp) e são listadas em `"fotos"` de cada casa. A primeira é a capa.
   As fotos da Azul e da Frida foram copiadas dos anúncios do Airbnb em 18/11/2026.
