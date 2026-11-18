@@ -48,8 +48,10 @@ CASAS = [
     "resumo": "Arquitetura moderna com cobogós terracota, piscina privativa e varanda gourmet integrada à sala e à cozinha.",
     "ideal": "Famílias e grupos de amigos que gostam de cozinhar e reunir todo mundo à mesa.",
     "hospedes": 7, "quartos": 3, "suites": 3, "banheiros": "3,5",
-    "camas": "1 cama de casal e 5 de solteiro",
-    "quartos_detalhe": [],        # >>> PREENCHER: camas de cada quarto, ex.: [("Suíte", "1 cama de casal · ar-condicionado"), ...]
+    "camas": "1 cama de casal, 4 de solteiro e 1 sofá-cama",
+    "quartos_detalhe": [("Suíte 1", "1 cama de casal e 1 sofá-cama · banheiro privativo · ar-condicionado"),
+                        ("Suíte 2", "2 camas de solteiro · banheiro privativo · ar-condicionado"),
+                        ("Suíte 3", "2 camas de solteiro · banheiro privativo · ar-condicionado")],
     "piscina": True,
     "nota": "4,9", "airbnb": "https://www.airbnb.com.br/rooms/28283599",
     "hero": "terracota-varanda-gourmet", "card": "terracota-jardim",
