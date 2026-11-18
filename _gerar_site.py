@@ -9,7 +9,7 @@ Os arquivos .html são recriados nesta mesma pasta.
 import json, html, datetime, os
 
 # ====== CONFIGURAÇÃO GERAL ======
-DOMINIO   = "https://clau219.github.io/casas-pipa"   # troque por "https://www.casasempipa.com.br" quando o domínio estiver registrado e ligado
+DOMINIO   = "https://clau219.github.io/casas-pipa"   # troque por "https://www.casafridapipa.com.br" quando o domínio estiver registrado e ligado
 MARCA     = "Casas em Pipa"
 WHATSAPP  = "5584996011991"                    # só números, com 55 + DDD
 TELEFONE  = "+55 84 99601-1991"

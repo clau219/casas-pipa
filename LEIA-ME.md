@@ -16,13 +16,13 @@ O GitHub Pages atualiza o site em 1–2 minutos.
 - **Fotos**: ficam em `img/` (.webp) e são listadas em `"fotos"` de cada casa. A primeira é a capa.
   As fotos da Azul e da Frida foram copiadas dos anúncios do Airbnb em 18/11/2026.
 
-## Domínio próprio (casasempipa.com.br)
+## Domínio próprio (casafridapipa.com.br)
 1. Registre o domínio em https://registro.br (~R$ 40/ano).
 2. No registro.br, em DNS, crie:
    - `www` tipo CNAME → `clau219.github.io`
    - registros A para o domínio sem www → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-3. Troque `DOMINIO` em `_gerar_site.py` para `https://www.casasempipa.com.br`, crie o arquivo `CNAME` com
-   `www.casasempipa.com.br`, rode o gerador e faça o push.
+3. Troque `DOMINIO` em `_gerar_site.py` para `https://www.casafridapipa.com.br`, crie o arquivo `CNAME` com
+   `www.casafridapipa.com.br`, rode o gerador e faça o push.
 4. No GitHub (Settings > Pages) marque "Enforce HTTPS".
 
 ## Como aparecer no Google
